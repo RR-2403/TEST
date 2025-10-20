@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <h2>FORM-1</h2>
+    <h3>REGISTRATION FORM</h3>
+    <form action="/server">
+        <input type="text" name="fn" id="name" placeholder="First Name">
+        <input type="text" name="ln" id="name" placeholder="Last Name">
+        <div>
+            Please Select Gender: 
+            <select name="Gen" id="Gen">
+                <option value="M">MALE</option>
+                <option value="F">FEMALE</option>
+            </select>
+        </div>
+        <div>
+            <label for="check">Do you agree to all terms of services?</label>
+            <input type="checkbox" name="q" id="check">
+            Yes, I agree.
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+    <hr />
+    <h2>FORM-2</h2>
+    <form action="/server">
+    <table border="black">
+        <caption>Student Information</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>house</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"></td>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name">
+    <div>
+    SEX:
+    <input type="radio" name="sex" id="sex" value="M">
+    <label for="sex">MALE</label>
+    <input type="radio" name="sex" id="sex" value="F">
+    <label for="sex">FEMALE</label>
+    </div>
+    <div>
+        Country:
+        <select name="country" id="country">
+            <option>Select an option</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Canada">Canada</option>
+        </select>
+    </div>
+    <div>
+        Message:
+        <br>
+        <textarea name="txt" ></textarea>
+    </div>
+    <div>
+        <input type="checkbox" name="check" id="check">
+        <label for="check">Subscribe?</label>
+    </div>
+    <button type="submit">Submit</button>
+    </form>
+    <hr />
+    <h2>FORM-3</h2>
+    <form action="server">
+        <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Write your name">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Write your email">
+        </div>
+        Message:
+        <br>
+        <textarea name="ar"></textarea>
+        <br>
+        <div>
+        <p>Please rate us out of 5:</p>
+        <input type="radio" name="rating" id="rating" value="1">
+        <label for="rating">1</label>
+        <br>
+        <input type="radio" name="rating" id="rating" value="2">
+        <label for="rating">2</label>
+        <br>
+        <input type="radio" name="rating" id="rating" value="3">
+        <label for="rating">3</label>
+        <br>
+        <input type="radio" name="rating" id="rating" value="4">
+        <label for="rating">4</label>
+        <br>
+        <input type="radio" name="rating" id="rating" value="5">
+        <label for="rating">5</label>
+        </div>
+        <button type="submit">Send your message</button>
+
+    </form>
+</body>
+</html>
